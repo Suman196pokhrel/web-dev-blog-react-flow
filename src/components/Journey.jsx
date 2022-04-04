@@ -65,7 +65,7 @@ function Journey() {
       >
       
       <Controls />
-        <Background color="#000000" gap={5} />
+        <Background color="#000000" gap={15} />
       </ReactFlow>
     </div>
   );
