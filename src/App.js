@@ -19,7 +19,7 @@ function App() {
         <Header />
         <div className='main'>
           <Routes>
-            <Route path='/' element={<Journey />} />
+            <Route path='/web-dev-blog-react-flow' element={<Journey />} />
             <Route path='/example' element={<FirstTest />} />
           </Routes>
         </div>
