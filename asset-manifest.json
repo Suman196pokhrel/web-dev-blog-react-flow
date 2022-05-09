@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/web-dev-blog-react-flow/static/css/main.428aea63.css",
-    "main.js": "/web-dev-blog-react-flow/static/js/main.3f216c03.js",
-    "index.html": "/web-dev-blog-react-flow/index.html",
-    "main.428aea63.css.map": "/web-dev-blog-react-flow/static/css/main.428aea63.css.map",
-    "main.3f216c03.js.map": "/web-dev-blog-react-flow/static/js/main.3f216c03.js.map"
+    "main.css": "/static/css/main.428aea63.css",
+    "main.js": "/static/js/main.3f216c03.js",
+    "index.html": "/index.html",
+    "main.428aea63.css.map": "/static/css/main.428aea63.css.map",
+    "main.3f216c03.js.map": "/static/js/main.3f216c03.js.map"
   },
   "entrypoints": [
     "static/css/main.428aea63.css",
