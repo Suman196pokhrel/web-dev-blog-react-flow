@@ -26,7 +26,7 @@ function Header() {
           -Pokhrel
         </Typography>
         <Stack spacing={2} direction="row" alignItems={"center"}>
-          <RouterLink to="/">
+          <RouterLink to="/web-dev-blog-react-flow">
             <Button size='large' sx={{color:"white"}}>Web Journey</Button>
           </RouterLink>
 
