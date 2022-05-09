@@ -1,6 +1,10 @@
 import React from 'react';
 import { MarkerType } from 'react-flow-renderer';
 
+const coordiantes = {
+  courseComp: {x:150,y:900}
+}
+
 export const nodes = [
   {
     id: '1',
@@ -170,7 +174,144 @@ export const myNodes = [
     data:{label:"First Complete Web Dev Course"},
     position:{x:-150,y:800}
   },
-  
+  {
+    id:'courseComp',
+    data:{label:"Course Contents"},
+    position:coordiantes.courseComp
+  },
+  {
+    id:"courseComp_1",
+    data:{label:"Fundamentals"},
+    position:{x:coordiantes.courseComp.x+250,y:coordiantes.courseComp.y}
+  },
+  {
+    id:'courseHTML',
+    data:{label:"HTML"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y}
+  },
+  {
+    id:'courseCSS',
+    data:{label:"CSS"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y+50}
+  },
+  {
+    id:'courseJS',
+    data:{label:"JavaScript"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y+100}
+  },
+
+  {
+    id:"courseComp_2",
+    data:{label:"CSS Frameworks"},
+    position:{x:coordiantes.courseComp.x+250,y:coordiantes.courseComp.y +200}
+  },
+  {
+    id:'bootstrap',
+    data:{label:"Bootstrap"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +200}
+  },
+
+  {
+    id:"jquery",
+    data:{label:"JQUery"},
+    position:{x:coordiantes.courseComp.x+250,y:coordiantes.courseComp.y +300}
+  },
+  {
+    id:"cmd",
+    data:{label:"Command Line"},
+    position:{x:coordiantes.courseComp.x+250,y:coordiantes.courseComp.y +400}
+  },
+  {
+    id:"backend",
+    data:{label:"Backend Web Dev"},
+    position:{x:coordiantes.courseComp.x+250,y:coordiantes.courseComp.y +500}
+  },
+  {
+    id:"nodejs1",
+    data:{label:"Node JS"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +500}
+  },
+  {
+    id:"expressjs",
+    data:{label:"Express JS"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +550}
+  },
+  {
+    id:"api",
+    data:{label:"API's"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +600}
+  },
+  {
+    id:"git1",
+    data:{label:"Git & GitHub"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +650}
+  },
+  {
+    id:"ejs",
+    data:{label:"EJS"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +700}
+  },
+  {
+    id:"database",
+    data:{label:"Databases"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +750}
+  },
+  {
+    id:"databaseSQL",
+    data:{label:"SQL"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +750}
+  },
+  {
+    id:"databaseMongo",
+    data:{label:"MongoDB-Mongoose"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +800}
+  },
+  {
+    id:"auth",
+    data:{label:"Authentication"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +850}
+  },
+  {
+    id:"username",
+    data:{label:"Register with UserName"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +900}
+  },
+  {
+    id:"encrypt",
+    data:{label:"Database Encryption"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +980}
+  },
+  {
+    id:"hashing",
+    data:{label:"Hashing Passwords"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +1050}
+  },
+  {
+    id:"salts",
+    data:{label:"Salts & Hashing Passwords with Bcrypt"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +1100}
+  },
+  {
+    id:"cookies",
+    data:{label:"Cookies and Sessions"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +1150}
+  },
+  {
+    id:"passportjs",
+    data:{label:"Passport JS For OAuth Google Sign-IN"},
+    position:{x:coordiantes.courseComp.x+650,y:coordiantes.courseComp.y +1250}
+  },
+
+  {
+    id:"reactjs",
+    data:{label:"React JS"},
+    position:{x:coordiantes.courseComp.x+450,y:coordiantes.courseComp.y +1300}
+  },
+
+
+
+
+
   
 ]
 
@@ -236,4 +377,160 @@ export const myEdges = [
     animated:true,
     label:"as i looked back , i saw that i was just touching surfaces of all tools without any seriuous study. Then i finally decied to pick web dev seriously and choose an online course"
   },
+  {
+    id:"course-courseComp",
+    source:'course',
+    target:'courseComp',
+    animated:true,
+    label:"I took my time with this one and completed all the Stuff without skips "
+  },
+  {
+    id:"courseComp-courseComp_1",
+    source:'courseComp',
+    target:'courseComp_1',
+    animated:true,
+  },
+  {
+    id:"courseComp_1-courseHTML",
+    source:'courseComp_1',
+    target:'courseHTML',
+    animated:false,
+  },
+  {
+    id:"courseComp_1-courseCSS",
+    source:'courseComp_1',
+    target:'courseCSS',
+    animated:false,
+  },
+  {
+    id:"courseComp1-courseJS",
+    source:'courseComp_1',
+    target:'courseJS',
+    animated:false,
+  },
+  {
+    id:"courseComp-courseComp2",
+    source:'courseComp',
+    target:'courseComp_2',
+    animated:false,
+  },
+  {
+    id:"courseComp2-bootstrap",
+    source:'courseComp_2',
+    target:'bootstrap',
+    animated:false,
+  },
+  {
+    id:"courseComp-jquery",
+    source:'courseComp',
+    target:'jquery',
+    animated:false,
+  },
+  {
+    id:"courseComp-cmd",
+    source:'courseComp',
+    target:'cmd',
+    animated:false,
+  },
+  {
+    id:"courseComp-backend",
+    source:'courseComp',
+    target:'backend',
+    animated:true,
+  },
+  {
+    id:"backend-nodejs1",
+    source:'backend',
+    target:'nodejs1',
+    animated:false,
+  },
+  {
+    id:"backend-expressjs",
+    source:'backend',
+    target:'expressjs',
+    animated:false,
+  },
+  {
+    id:"backend-api",
+    source:'backend',
+    target:'api',
+    animated:false,
+  },
+  {
+    id:"backend-git1",
+    source:'backend',
+    target:'git1',
+    animated:false,
+  },
+  {
+    id:"backend-ejs",
+    source:'backend',
+    target:'ejs',
+    animated:false,
+  },
+  {
+    id:"backend-database",
+    source:'backend',
+    target:'database',
+    animated:true,
+  },
+  {
+    id:"database-databaseSQL",
+    source:'database',
+    target:'databaseSQL',
+    animated:false,
+  },
+  {
+    id:"database-databaseMongo",
+    source:'database',
+    target:'databaseMongo',
+    animated:false,
+  },
+  {
+    id:"backend-auth",
+    source:'backend',
+    target:'auth',
+    animated:true,
+  },
+  {
+    id:"auth-username",
+    source:'auth',
+    target:'username',
+    animated:false,
+  },
+  {
+    id:"auth-encrypt",
+    source:'auth',
+    target:'encrypt',
+    animated:false,
+  },
+  {
+    id:"auth-salts",
+    source:'auth',
+    target:'salts',
+    animated:false,
+  },
+  {
+    id:"auth-cookies",
+    source:'auth',
+    target:'cookies',
+    animated:false,
+  },
+  {
+    id:"auth-passportjs",
+    source:'auth',
+    target:'passportjs',
+    animated:false,
+  },
+  {
+    id:"courseComp-reactjs",
+    source:'courseComp',
+    target:'reactjs',
+    animated:true,
+  },
 ]
+
+
+
+
+
